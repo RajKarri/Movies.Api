@@ -77,7 +77,7 @@ namespace Movies.Api.BusinessLogic
                 });
             });
 
-            return movieRatingModels.OrderByDescending(x => x.averageRating).ToList();
+            return movieRatingModels.OrderByDescending(x => x.averageRating).ThenByDescending(x => x.Title).ToList();
         }
 
         public IList<MovieRatingModel> TopFiveMoviesBySpecificUser(int userId)
@@ -105,7 +105,7 @@ namespace Movies.Api.BusinessLogic
                 });
             });
 
-            return movieRatingModels.OrderByDescending(x => x.averageRating).ToList();
+            return movieRatingModels.OrderByDescending(x => x.averageRating).ThenByDescending(x => x.Title).ToList();
         }
 
         private static double GetOverallRating(IList<Rating> ratings)
