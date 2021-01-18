@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Movies.Api.Models\Movies.Api.Models.csproj" />
+    <ProjectReference Include="..\Movies.Api.Repositories\Movies.Api.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
