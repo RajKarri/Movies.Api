@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Movies.Api.Models.DbModels
 {
@@ -7,5 +8,6 @@ namespace Movies.Api.Models.DbModels
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
+        public ICollection<Rating> Ratings { get; set; }
     }
 }

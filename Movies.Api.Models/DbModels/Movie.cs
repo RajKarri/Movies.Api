@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Movies.Api.Models.DbModels
 {
@@ -10,5 +11,6 @@ namespace Movies.Api.Models.DbModels
         public int YearOfRelease { get; set; }
         public string runningTime { get; set; }
         public string Genres { get; set; }
+        public ICollection<Rating> Ratings { get; set; }
     }
 }
