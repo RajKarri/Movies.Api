@@ -7,4 +7,4 @@ https://github.com/RajKarri/Generic-Repository
 
 https://github.com/RajKarri/Generic-Repository/blob/master/GenRepCore/Repository/Repositories/EntityFrameworkRepository.cs
 
-## Please note that both contributers on this sourcecode are mine as I have two different accounts (one from github & another one came through microsoft acquisition) 
+## Please note that both contributors on this sourcecode are mine as I have two different accounts (one from github & another one came through microsoft acquisition) 
